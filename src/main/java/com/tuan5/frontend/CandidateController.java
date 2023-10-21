@@ -34,10 +34,10 @@ public class CandidateController {
                                           @RequestParam("size") Optional<Integer> size) {
         int currentPage = page.orElse(2);
         int pageSize = size.orElse(10);
-//        Page<Candidate> candidatePage= candidateServices.findPaginated(
-//                PageRequest.of(currentPage -1, pageSize)
-//        );
-        Page<Candidate> candidatePage = candidateServices.findAll(currentPage - 1, pageSize, "id", "asc");
+        Page<Candidate> candidatePage= candidateServices.findPaginated(
+                PageRequest.of(currentPage -1, pageSize)
+        );
+//        Page<Candidate> candidatePage = candidateServices.findAll(currentPage - 1, pageSize, "id", "asc");
         model.addAttribute("candidatePage", candidatePage);
         int totalPages = candidatePage.getTotalPages();
         if (totalPages > 0) {
