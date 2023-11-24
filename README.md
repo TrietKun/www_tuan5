@@ -45,6 +45,9 @@ Trong lớp CandidateController ta thêm phương thức như sau:
   }
 ```
 
+![image](https://github.com/TrietKun/www_tuan5/assets/103935961/2e27fafe-2c3f-46f9-ad9d-dd04b492e51f)
+
+
 <h2>L
 OAD DỮ LIỆU KHÔNG PHÂN TRANG</h2>
 Trong gói front-end, ta thêm các gói như hình 4. Code cho CandidateController tham khảo như sau
@@ -63,3 +66,7 @@ model.addAttribute("candidates", candidateRepository.findAll());
 return "candidates/candidates";
 }
 ```
+
+![image](https://github.com/TrietKun/www_tuan5/assets/103935961/04e04081-e817-4c90-9bf3-9a1d0d88c2f7)
+
+
